@@ -7,31 +7,32 @@ NOTE: CI-CD approach step is added in CI-CD-Approach.docx .Please download this 
     git clone https://github.com/NitishSK/Assignment.git
 
 ## cd to assignment directory
+```
    cd "Assignment"
-
+```
 ### list all files and directory using below commands
-
+```
    ls -ltrh
-
+```
 ### Output:
 ```
 drwxr-xr-x 3 root root 4.0K Sep  5 17:37 mediawiki
 drwxr-xr-x 3 root root 4.0K Sep  5 17:43 database
 -rw-r--r-- 1 root root 3.2K Sep  5 17:48 README.md
 ```
-
-### You will see two directory "database" and "mediawiki". These directory is divided based backend(mariaDB database for mediawiki) and frontend(mediawiki)
-
-   database:
+```
+You will see two directory "database" and "mediawiki". These directory is divided based backend(mariaDB database for mediawiki) and frontend(mediawiki)
+```
+### database:
 
 ## Move to database directory now by using below commands
-
+```
   cd database
-
+```
 ### Again list all files and directory of database using below commands
-
+```
   ls -ltrh
-
+```
 ### Output:
 ```
 -rw-r--r-- 1 root root   24 Sep  5 11:44 README.md
@@ -48,21 +49,21 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 
 >> chart/wikidatabase: Helm chart for database
 
->> run.sh: db sql query executor script 
+>> run.sh: init.sql query executor script 
 
 
-Steps to create images for database:
+### Steps to create images for database:
 
-1. make sure you are inside database directory
+1. Make sure you are inside database directory
 
 2. Docker build . -t "IMAGE_NAME:TAG"
 
-3. tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
+3. Tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
 
-4. push image to your registery (docker push xyz/xxxx:v1)
+4. Push image to your registery (docker push xyz/xxxx:v1)
 
 
-steps to Deploy helm chart of database
+### steps to Deploy helm chart of database
 
 1. make sure you are inside database/chart
 
@@ -79,13 +80,13 @@ steps to Deploy helm chart of database
 ## mediawiki:
 
 ### Move to mediawiki directory now by using below commands 
-
+```
     cd mediawiki
-
+```
 ### Again list all files and directory of mediawiki using below commands
-
+```
     ls -ltrh
-
+```
 ### Output:
 ```
 -rw-r--r-- 1 root root   24 Sep  5 11:44 README.md
@@ -105,7 +106,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 17:01 chart
 
 >> php.ini: Basic php configuration file 
 
-Steps to create images for mediawiki:
+### Steps to create images for mediawiki:
 
 1. make sure you are inside mediawiki directory
 
@@ -116,7 +117,7 @@ Steps to create images for mediawiki:
 4. push image to your registery (docker push xyz/xxxx:v1)
 
 
-steps to Deploy helm chart of mediawiki
+### steps to Deploy helm chart of mediawiki
 
 1. make sure you are inside mediawiki/chart/
 
