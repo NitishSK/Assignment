@@ -1,12 +1,12 @@
 # Assignment
 NOTE: CI-CD approach step is added in CI-CD-Approach.docx .Please download this file to have a look. 
 
-### manual deployment Steps
+### Manual Deployment Steps
 
 ### clone repo
     git clone https://github.com/NitishSK/Assignment.git
 
-## cd to assignment directory
+### Move to Assignment directory
 ```
    cd "Assignment"
 ```
@@ -23,7 +23,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 17:43 database
 ```
 You will see two directory "database" and "mediawiki". These directory is divided based backend(mariaDB database for mediawiki) and frontend(mediawiki)
 ```
-### database:
+# Database:
 
 ## Move to database directory now by using below commands
 ```
@@ -54,13 +54,13 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 
 ### Steps to create images for database:
 
-1. Make sure you are inside database directory
+1.Make sure you are inside database directory
 
-2. Docker build . -t "IMAGE_NAME:TAG"
+2.Docker build . -t "IMAGE_NAME:TAG"
 
-3. Tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
+3.Tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
 
-4. Push image to your registery (docker push xyz/xxxx:v1)
+4.Push image to your registery (docker push xyz/xxxx:v1)
 
 
 ### steps to Deploy helm chart of database
@@ -77,7 +77,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-## mediawiki:
+# Mediawiki:
 
 ### Move to mediawiki directory now by using below commands 
 ```
