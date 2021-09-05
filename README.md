@@ -1,45 +1,46 @@
-# assignment
+# Assignment
 NOTE: CI-CD approach step is added in CI-CD-Approach.docx .Please download this file to have a look. 
 
-## manual deployment Steps
+### manual deployment Steps
 
-## clone repo
-  git clone https://github.com/NitishSK/Assignment.git
+### clone repo
+    git clone https://github.com/NitishSK/Assignment.git
 
 ## cd to assignment directory
-  cd "Assignment"
+   cd "Assignment"
 
-## list all files and directory using below commands
+### list all files and directory using below commands
 
-  ls -ltrh
+   ls -ltrh
 
-  Output:
-
+### Output:
+```
 drwxr-xr-x 3 root root 4.0K Sep  5 17:37 mediawiki
 drwxr-xr-x 3 root root 4.0K Sep  5 17:43 database
 -rw-r--r-- 1 root root 3.2K Sep  5 17:48 README.md
+```
 
-## You will see two directory "database" and "mediawiki". These directory is divided based backend(mariaDB database for mediawiki) and frontend(mediawiki)
+### You will see two directory "database" and "mediawiki". These directory is divided based backend(mariaDB database for mediawiki) and frontend(mediawiki)
 
-database:
+   database:
 
 ## Move to database directory now by using below commands
 
-cd database
+  cd database
 
-## Again list all files and directory of database using below commands
+### Again list all files and directory of database using below commands
 
-ls -ltrh
+  ls -ltrh
 
-Output:
-
+### Output:
+```
 -rw-r--r-- 1 root root   24 Sep  5 11:44 README.md
 -rw-r--r-- 1 root root  619 Sep  5 11:44 Dockerfile
 -rwxr-xr-x 1 root root   70 Sep  5 11:44 run.sh
 -rw-r--r-- 1 root root  246 Sep  5 11:44 init.sql
 drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 -rw-r--r-- 1 root root 1.6K Sep  5 17:43 Jenkinsfile
-
+```
 
 >> Dockerfile : Docker file to create image of mariaDB
 
@@ -75,18 +76,18 @@ steps to Deploy helm chart of database
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-# mediawiki:
+## mediawiki:
 
-## Move to mediawiki directory now by using below commands 
+### Move to mediawiki directory now by using below commands 
 
-cd mediawiki
+    cd mediawiki
 
-## Again list all files and directory of mediawiki using below commands
+### Again list all files and directory of mediawiki using below commands
 
-ls -ltrh
+    ls -ltrh
 
-Output:
-
+### Output:
+```
 -rw-r--r-- 1 root root   24 Sep  5 11:44 README.md
 -rw-r--r-- 1 root root 1.3K Sep  5 15:08 Dockerfile
 -rw-r--r-- 1 root root  34M Sep  5 15:24 mediawiki-1.31.0.tar.gz
@@ -94,7 +95,7 @@ Output:
 -rw-r--r-- 1 root root  382 Sep  5 16:59 virtualhost.conf
 drwxr-xr-x 3 root root 4.0K Sep  5 17:01 chart
 -rw-r--r-- 1 root root 1.6K Sep  5 17:37 Jenkinsfile
-
+```
 
 >> Dockerfile : Docker file to create image mediawiki
 
