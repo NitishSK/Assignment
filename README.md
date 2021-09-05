@@ -54,28 +54,28 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 
 ### Steps to create images for database:
 
-1.Make sure you are inside database directory
+  1. Make sure you are inside database directory
 
-2.Docker build . -t "IMAGE_NAME:TAG"
+  2. Docker build . -t "IMAGE_NAME:TAG"
 
-3.Tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
+  3. Tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
 
-4.Push image to your registery (docker push xyz/xxxx:v1)
+  4. Push image to your registery (docker push xyz/xxxx:v1)
 
 
-### steps to Deploy helm chart of database
+### Steps to Deploy helm chart of database
 
-1. make sure you are inside database/chart
+  1. make sure you are inside database/chart
 
-2. Edit the image name and tag name of image in values.yaml
+  2. Edit the image name and tag name of image in values.yaml
 
-3. Deploy helm chart (helm install wikidatabase --generate-name)
+  3. Deploy helm chart (helm install wikidatabase --generate-name)
 
-4. Check release (helm ls )
+  4. Check release (helm ls )
 
-5. check pod status (kubectl pod status/ kubectl get svc )
+  5. check pod status (kubectl pod status/ kubectl get svc )
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # Mediawiki:
 
@@ -108,23 +108,23 @@ drwxr-xr-x 3 root root 4.0K Sep  5 17:01 chart
 
 ### Steps to create images for mediawiki:
 
-1. make sure you are inside mediawiki directory
+  1. make sure you are inside mediawiki directory
 
-2. Docker build . -t "IMAGE_NAME:TAG"
+  2. Docker build . -t "IMAGE_NAME:TAG"
 
-3. tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
+  3. tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
 
-4. push image to your registery (docker push xyz/xxxx:v1)
+  4. push image to your registery (docker push xyz/xxxx:v1)
 
 
-### steps to Deploy helm chart of mediawiki
+### Steps to Deploy helm chart of mediawiki
 
-1. make sure you are inside mediawiki/chart/
+  1. make sure you are inside mediawiki/chart/
 
-2. Edit the image name and tag name of image in values.yaml
+  2. Edit the image name and tag name of image in values.yaml
 
-3. Deploy helm chart (helm install mediawiki --generate-name)
+  3. Deploy helm chart (helm install mediawiki --generate-name)
 
-4. Check release (helm ls )
+  4. Check release (helm ls )
 
-5 .Access mediawiki app using loadbalancer DNS (http://{DNS loadbalancer:80/mediawiki/}) 
+  5. Access mediawiki app using loadbalancer DNS (http://{DNS loadbalancer:80/mediawiki/}) 
