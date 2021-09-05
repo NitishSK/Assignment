@@ -1,33 +1,33 @@
 # assignment
 NOTE: CI-CD approach step is added in CI-CD-Approach.docx .Please download this file to have a look. 
 
-#manual deployment Steps
+## manual deployment Steps
 
-#clone repo
-git clone https://github.com/NitishSK/Assignment.git
+## clone repo
+  git clone https://github.com/NitishSK/Assignment.git
 
-#cd to assignment directory
-cd "Assignment"
+## cd to assignment directory
+  cd "Assignment"
 
-#list all files and directory using below commands
+## list all files and directory using below commands
 
-ls -ltrh
+  ls -ltrh
 
-Output:
+  Output:
 
 drwxr-xr-x 3 root root 4.0K Sep  5 17:37 mediawiki
 drwxr-xr-x 3 root root 4.0K Sep  5 17:43 database
 -rw-r--r-- 1 root root 3.2K Sep  5 17:48 README.md
 
-#you will see two directory "database" and "mediawiki". These directory is divided based backend(mariaDB database for mediawiki) and frontend(mediawiki)
+## You will see two directory "database" and "mediawiki". These directory is divided based backend(mariaDB database for mediawiki) and frontend(mediawiki)
 
 database:
 
-#Move to database directory now by using below commands
+## Move to database directory now by using below commands
 
 cd database
 
-#Again list all files and directory of database using below commands
+## Again list all files and directory of database using below commands
 
 ls -ltrh
 
@@ -75,13 +75,13 @@ steps to Deploy helm chart of database
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-mediawiki:
+# mediawiki:
 
-#Move to mediawiki directory now by using below commands 
+## Move to mediawiki directory now by using below commands 
 
 cd mediawiki
 
-#Again list all files and directory of mediawiki using below commands
+## Again list all files and directory of mediawiki using below commands
 
 ls -ltrh
 
