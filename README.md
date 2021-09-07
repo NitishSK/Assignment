@@ -75,7 +75,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 
   5. check pod status (kubectl pod status/ kubectl get svc )
 
-# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # Mediawiki:
 
@@ -119,7 +119,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 17:01 chart
 
 ### Steps to Deploy helm chart of mediawiki
 
-  1. make sure you are inside mediawiki/chart/
+  1. Make sure you are inside mediawiki/chart/
 
   2. Edit the image name and tag name of image in values.yaml
 
