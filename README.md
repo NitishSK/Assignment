@@ -10,7 +10,7 @@ NOTE: CI-CD approach step is added in CI-CD-Approach.docx .Please download this 
 ```
    cd "Assignment"
 ```
-### list all files and directory using below commands
+### List all files and directory using below commands
 ```
    ls -ltrh
 ```
@@ -65,7 +65,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 
 ### Steps to Deploy helm chart of database
 
-  1. make sure you are inside database/chart
+  1. Make sure you are inside database/chart
 
   2. Edit the image name and tag name of image in values.yaml
 
@@ -73,7 +73,7 @@ drwxr-xr-x 3 root root 4.0K Sep  5 11:45 chart
 
   4. Check release (helm ls )
 
-  5. check pod status (kubectl pod status/ kubectl get svc )
+  5. Check pod status (kubectl pod status/ kubectl get svc )
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -108,13 +108,13 @@ drwxr-xr-x 3 root root 4.0K Sep  5 17:01 chart
 
 ### Steps to create images for mediawiki:
 
-  1. make sure you are inside mediawiki directory
+  1. Make sure you are inside mediawiki directory
 
   2. Docker build . -t "IMAGE_NAME:TAG"
 
-  3. tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
+  3. Tag docker images based on the repo name (docker tag xxxx:v1 xyz/xxxx:v1)
 
-  4. push image to your registery (docker push xyz/xxxx:v1)
+  4. Push image to your registery (docker push xyz/xxxx:v1)
 
 
 ### Steps to Deploy helm chart of mediawiki
