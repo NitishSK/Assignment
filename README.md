@@ -1,9 +1,9 @@
 # Assignment
-NOTE: CI-CD approach step is added in CI-CD-Approach.docx .Please download this file to have a look. 
+NOTE: CI-CD approach steps are added in CI-CD-Approach.docx .Please download this file to have a look. 
 
 ### Manual Deployment Steps
 
-### clone repo
+### Clone repo
     git clone https://github.com/NitishSK/Assignment.git
 
 ### Move to Assignment directory
